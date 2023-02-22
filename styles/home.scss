@@ -1,0 +1,147 @@
+@use "../partials/typography";
+@use "../partials/variables" as *;
+@use "../partials/mixins" as *;
+@use "../partials/resets";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  height: 5rem;
+  align-items: center;
+  margin: 0 5rem;
+
+  //   &__div {
+  //     border-bottom: 1px solid $brand-primary;
+  //   }
+
+  //   &__div:hover {
+  //     padding-bottom: 1rem;
+  //   }
+
+  &__item {
+    text-decoration: none;
+    border-bottom: 1px solid $light-grey;
+    color: $white;
+    font-size: $body;
+    padding: 0.5rem 1rem;
+  }
+
+  &__item:hover {
+    background-color: $light-grey;
+    color: $black;
+  }
+}
+
+.main {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  //   margin-top: 5rem;
+}
+
+.title {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &__main-wrapper {
+    // background-color: $light-grey;
+    // border-radius: 1rem;
+    display: flex;
+    width: 75%;
+
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__h1 {
+    font-size: $h1;
+    color: $white;
+    margin: 0;
+  }
+
+  &__h1-0x {
+    color: $black;
+    background-color: $light-grey;
+    margin: 0 1rem;
+    height: 100%;
+  }
+
+  &__h1-0x:hover {
+    background-color: $black;
+    color: $white;
+  }
+
+  &__sub-wrapper {
+    border-left: 1px solid $light-grey;
+    padding: 2rem;
+    margin-top: 3rem;
+  }
+
+  &__h3 {
+    color: $white;
+    font-size: $h3;
+    margin: 0;
+  }
+}
+
+.explore {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &__title {
+    color: $dark-grey;
+  }
+
+  &__form-wrapper {
+    width: 42%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.form {
+  border-bottom: 1px solid $dark-grey;
+  width: 100%;
+  &__input {
+    width: 100%;
+    padding: 2rem;
+    border-radius: 10rem;
+    background-color: $black;
+    outline: none;
+    border: none;
+    color: $white;
+    font-family: Roboto;
+  }
+}
+
+.form:hover {
+  border-bottom: 1px solid $white;
+}
+
+.footer {
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $black;
+  color: $white;
+  font-size: $body;
+
+  &__link {
+    text-decoration: none;
+    color: $white;
+  }
+
+  &__link:hover {
+    border-bottom: 1px solid $white;
+  }
+}

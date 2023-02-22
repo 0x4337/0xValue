@@ -1,0 +1,19 @@
+@use "./typography";
+@use "./variables" as *;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: Roboto;
+  background-color: $black;
+  margin: 0;
+}
